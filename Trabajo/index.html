@@ -1,0 +1,83 @@
+<html>
+<head> 
+<title>formulario</title>
+
+<style type="text/css">
+#formulario{
+background: #C0C0C0;
+text-align:center;
+width: 300px;
+margin-top:12%;
+margin-left:3%;
+padding:5%;
+height:500px;
+
+}
+
+
+</style>
+<script type="text/javascript" src="ejerci.js"></script>
+</head>
+<body background="http://i.blogs.es/160d91/istock_000017370230_small/450_1000.jpg">
+<center>
+<div id="formulario">
+
+<h2>Formulario de Grasa Corporal</h2>
+
+<form action="ejercicio.php" method="post">
+
+Nombre:
+<input type="text" name="nombre">
+<br>
+<br>
+
+Edad:
+<input type="text" name="edad">
+<br>
+<br>
+
+Peso (kg):
+<input type="text" name="peso"> 
+<br>
+<br>
+
+Sexo:
+<input type="radio" name="radio1" value ="Masculino" onclick="ocultar()"> Masculino
+ 
+<input type="radio" name="radio1" value ="Femenino" checked="checked" onclick="mostrar()" > Femenino
+<br>
+<br>
+
+
+<h3>Medidas Requeridas</h3> 
+<br>
+Cintura (cm):
+<input type="text-align" name="Cintura" style="width:60px;">
+<br>
+<br>
+Cuello (cm):
+<input type="text-align" name="Cuello" style="width:60px;">
+<br>
+<br>
+Altura (cm): 
+<input type="text-align" name="Altura" style="width:60px;">
+<br>
+<br>
+
+<div id="oculto" style="display:none;">
+
+Cadera (cm) : 
+<input type="text" name="Cadera" style="width:60px;">
+<br>
+</div>
+<br>
+<input type="submit" value="Aceptar">
+
+</div>
+</form>
+</center>
+
+</body>
+</html>
+
+ 
